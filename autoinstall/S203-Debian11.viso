@@ -1,0 +1,8 @@
+--iprt-iso-maker-file-marker-bourne-sh=f7ce09fe-9a79-464c-a24b-ef2499b291f7
+--volume-id=S203-viso --file-mode=0444 --dir-mode=0555 --no-file-mode --no-dir-mode 
+--import-iso=/home/public/r205/debian-11.6.0-amd64-netinst.iso --file-mode=0444 --dir-mode=0555 
+isolinux/isolinux.cfg=:must-remove: 'isolinux/isolinux.cfg=isolinux-isolinux.cfg' 
+/isolinux/txt.cfg=:must-remove: '/isolinux/txt.cfg=isolinux-txt-fr.cfg' 
+'/preseed.cfg=preseed-fr.cfg' 
+'/vboxpostinstall.sh=vboxpostinstall.sh' --push-iso=/usr/share/virtualbox/VBoxGuestAdditions.iso /vboxadditions=/ 
+--pop
